@@ -1,0 +1,45 @@
+body h1{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+div{
+    background: white;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    width: auto;
+    margin: 20px auto 20px auto;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.336);
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#nome{
+    text-align: center;
+    font-size: 30px;
+}
+
+.obj{
+    text-align: center;
+}
+
+#fPerfil{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    right: 25px;
+    top: 25px
+}
+
+#rodape{
+    text-align: center;
+    font-size: 30px;
+}
+
+#dados{
+    text-align: center;
+}
