@@ -1,108 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bruno Koster">
-    <meta name="description" content="Meu currículo">
-    <meta name="keywords" content="curriculo, programação">
-    <link rel="stylesheet" type="text/css" href="css/modelo.css">
-    <title>Bruno Koster</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">  
+  <title>Currículo</title>
 </head>
 <body>
-    <div id="nome">
-        <p id="txtNome"><strong>Bruno Everton Fleck Koster</strong>
-        </p>
-    </div>
-    <img src="img/perfil.jpeg" alt="FotoPerfil" id="fPerfil">
-    <div id="dados">
-        <p>
-            <h2>
-                Brasileiro, Solteiro, 16 Anos <br>
-                Avenida Dorival Cândido Luz de Oliveira, 3520 <br>
-                Gravataí, RS <br>
-                Telefone: (51) 99273-9908 <br>
-                E-mail: bruno10762@gmail.com <br>
-            </h2>
-        </p>
-        
-        <a href="https://github.com/uFleck" target="_blank"><img src="img/github.png" alt="Logo do GitHub" width="75" height="75"> </a>
-        <a href="https://www.linkedin.com/in/bruno-koster" target="_blank"><img src="img/linkedin.png" alt="Logo do Linkedin" width="75" height="75"></a>
-    </div>
-
-    <div class="obj">
-        <h1>Objetivo</h1>
-        <h2>
-            Trabalhar na área de TI, crescer profissionalmente, me qualificar e trazer pontos positivos para a empresa.
-        </h2>
-    </div>
-    <div>
-        <h1>Formação</h1>
-        <ul>
-            <li>
-                <h2>
-                    Curso Técnico em Informática - QI Escolas e Faculdades. Conclusão em 08/2021
-                </h2>
-                <h2>► Detalhes do curso:</h2>
-                <ul>
-                    <li>
-                        <h2>
-                            Linguagens de Programação: Java, JavaScript, PHP, Android, C;
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            Linguagens de Banco de Dados: MySQL, SQLLite;
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            Linguagens / Bibliotecas / FrameWorks WEB: HTML5, CSS3, JavaScript, PHP, AngularJS, JSQuery, Spring, Bootstrap;
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            Sistemas Operacionais: Windows 7.0, Windows 8.0 e Windows 10, Linux Ubuntu;
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            Área Gráfica: GIMP, FireWorks e Noções de PhotoShop, Inkscape, noções de CorelDraw;
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            Infra: Sistemas Operacionais, Servidores, Redes.
-                        </h2>
-                    </li>
-                </ul>
-            </li>
-
-            <li><h2>Ensino Médio(cursando) - Ponche Verde - Gravataí</h2></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bruno Koster</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end fs-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item text-end">
+            <a class="nav-link active" aria-current="page" href="#presentation">Presentation</a>
+          </li>
+          <li class="nav-item text-end">
+            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item text-end">
+            <a class="nav-link active" aria-current="page" href="#education">Courses</a>
+          </li>
+          <li class="nav-item text-end">
+            <a class="nav-link active" aria-current="page" href="#personalSynthesis">Personal Synthesis</a>
+          </li>          
         </ul>
+      </div>
     </div>
-    <div>
-        <h1>Síntese Pessoal</h1>
-        <ul>
-            <li>
-                <h2>
-                    Sou uma pessoa dinâmica, extrovertida, tenho facilidade em me relacionar e sou auto-didata
-                </h2>
-            </li>
+  </nav>
 
-            <li>
-                <h2>
-                    Facilidade de trabalhar em equipe
-                </h2>
-            </li>
-            
-            <li>
-                <h2>
-                    Organização e praticidade.
-                </h2>
-            </li>
-        </ul>
+  <div id="presentation">
+    <div id="photo">
     </div>
-    <footer id="rodape"><a href="#nome">Voltar ao topo</a></footer>
+    <p class="fs-4 mt-3">
+      Olá, meu nome é Bruno e eu sou um amante da técnologia e programação!
+    </p>
+  </div>
+
+  <div id="skills">
+    <p class="underline fs-4 title">Skills</p>
+    <div class="list fs-5">
+      <p><span class="underline">Programming Languages:</span> Java, JavaScript, PHP, Android, Python;</p>
+      <p><span class="underline">Database Languages:</span> MySQL, SQLLite;</p>
+      <p><span class="underline">Languages / Libraries / FrameWorks WEB:</span> HTML5, CSS3, JavaScript, PHP, AngularJS, JQuery, Bootstrap;</p>
+      <p><span class="underline">Operational Systems:</span> Windows 7.0, Windows 8.0 e Windows 10, Linux Ubuntu, Linux Manjaro, Linux Fedora;</p>
+      <!-- <p><span class="underline">Área Gráfica:</span> GIMP, FireWorks e Noções de PhotoShop, Inkscape, noções de CorelDraw;</p> -->
+      <p><span class="underline">Infra:</span> Sistemas Operacionais, Servidores, Redes.</p>
+    </div>
+  </div>
+
+  <div id="education">
+    <p class="underline fs-4 title">Education</p>
+    <div class="list fs-5">
+      <p>Curso Técnico em Informática - QI Escolas e Faculdades.</p>
+      <p>High School (Studying) - Ponche Verde - Gravataí</p>
+    </div>
+  </div>
+
+  <div id="personalSynthesis">
+    <p class="underline fs-4 title">Personal Synthesis</p>
+    <div class="list fs-5">
+      I'm a dynamic person, extroverted, I'm easy to relate to and I'm self-taught;
+      Ease of working in a team;
+      Organized and practical.
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
