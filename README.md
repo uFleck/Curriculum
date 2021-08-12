@@ -1,2 +1,2 @@
-# Meu Curriculo
- https://ufleck.github.io/Meu-Curriculo/
+# My Curriculum
+ https://ufleck.github.io/Curriculum/
