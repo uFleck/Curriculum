@@ -1,6 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
+body, ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -10,16 +10,12 @@ a {
 }
 
 a:hover {
-  border-bottom-color: red;
+  background: rgba(0, 0, 0, .05);
 }
 
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-#logo:visited {
-  color: black;
 }
 
 #header {
@@ -30,9 +26,6 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background-color: #e7e7e7;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 #menu {
@@ -57,7 +50,6 @@ a:hover {
     width: 100%;
     top: 70px;
     right: 0px;
-    padding-left: 0px;
     background: #e7e7e7 ;
     height: 0;
     z-index: 1000;
@@ -73,21 +65,10 @@ a:hover {
   }
 
   #menu a {
-    padding: 1rem .5rem;
+    padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, .05);
-    transition: .3s
-    
   }
-
-  #menu a:visited {
-    color: black;
-  }
-
-  #menu a:hover {
-    border-bottom: 2px solid red;
-  }
-
 
   #btn-mobile {
     display: flex;
@@ -129,74 +110,5 @@ a:hover {
     transform: rotate(-135deg);
     position: relative;
     top: -7px;
-  }
-}
-
-#presentation{
-  width: 40%;
-  margin: 0 auto;
-  padding-top: 10em;
-  padding-bottom: 100vh;
-}
-
-#presentation p {
-  text-align: justify;
-}
-
-#photo {
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-}
-
-#skills {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 100vh;
-  display: block;
-}
-
-.title {
-  width: fit-content;
-  margin-left: 10%;
-  margin-top: 10%;
-}
-
-.underline {
-  border-bottom: red solid 2px;
-}
-
-.list {
-  margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-}
-
-#education {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 100vh;
-  display: block;
-}
-
-#personalSynthesis {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 100vh;
-  display: block;
-}
-
-@media only screen and (max-width: 800px) {
-  #presentation {
-    width: 65%;
-  }
-
-  .title {
-    margin-left: 0;
-  }
-  
-  .list {
-    margin-left: 10%;
   }
 }
