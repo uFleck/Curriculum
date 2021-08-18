@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  // nav
   const btnMobile = $('#btn-mobile')
   const nav = $('#nav')
   const menu = $('#menu')
@@ -30,4 +32,13 @@ $(document).ready(function () {
       toggleMenu()
     }
   });
+
+  // dark mode
+  const toggle = $('#toggle')
+
+  $(toggle).click(function () { 
+    $(toggle).toggleClass('active')
+    $('body').toggleClass('active')
+  });
+
 })
