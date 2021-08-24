@@ -46,6 +46,7 @@ a {
 }
 
 #header {
+  background-color: rgba(43, 43, 43, .7);
   box-sizing: border-box;
   height: 70px;
   padding: 1rem;
@@ -55,6 +56,10 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+body.active #header {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #nav {
@@ -88,6 +93,14 @@ a {
 }
 
 @media (max-width: 600px) {
+  #header {
+    background-color: rgba(43, 43, 43, .7);
+  }
+
+  body.active #header {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
   #menu {
     display: block;
     position: absolute;
@@ -97,7 +110,7 @@ a {
     padding-left: 0px;
     height: 0;
     z-index: 1000;
-    transition: .6s;
+    transition: .5s;
     visibility: hidden;
     overflow-y: hidden;
   }
@@ -140,7 +153,7 @@ a {
 
   #hamburguer {
     display: block;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
     width: 20px;
     transition: .2s;
   }
@@ -151,9 +164,17 @@ a {
     width: 20px;
     height: 2px;
     margin-top: 5px;
-    background: currentColor;
+    background: white;
     transition: .3s;
     position: relative;
+  }
+
+  body.active #hamburguer{
+    border-top: 2px solid black;
+  }
+
+  body.active #hamburguer::after, body.active #hamburguer::before {
+    background: black;
   }
 
   #nav.active #hamburguer {
@@ -171,11 +192,12 @@ a {
   }
 }
 
+
 #presentation {
   width: 40%;
   margin: 0 auto;
   padding-top: 10em;
-  padding-bottom: 100vh;
+  padding-bottom: 70vh;
 }
 
 #photo {
@@ -243,14 +265,15 @@ a {
 #objective {
   padding-top: 2em;
   padding-left: 2em;
-  padding-bottom: 100vh;
+  padding-bottom: 70vh;
   display: block;
 }
+
 
 #skills {
   padding-top: 2em;
   padding-left: 2em;
-  padding-bottom: 100vh;
+  padding-bottom: 70vh;
   display: block;
 }
 
@@ -273,14 +296,14 @@ a {
 #education {
   padding-top: 2em;
   padding-left: 2em;
-  padding-bottom: 100vh;
+  padding-bottom: 70vh;
   display: block;
 }
 
 #personalSynthesis {
   padding-top: 2em;
   padding-left: 2em;
-  padding-bottom: 100vh;
+  padding-bottom: 70vh;
   display: block;
 }
 
