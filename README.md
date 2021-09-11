@@ -1,2 +1,2 @@
-[Click here to see](https://ufleck.github.io/Curriculum/)
+[Click here to see](https://ufleck.github.io/about-me/)
  
